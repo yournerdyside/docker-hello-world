@@ -8,5 +8,6 @@
   - Build image
   - Push it to DockerHub
   - Reuse it in CI/CD job/runner
+- (Bonus) Test app against different python versions. i.e. 3.7, 3.8, 3.9, 3.10
 
 P.S. For each step you should create Pull Request (PR) with new branch
