@@ -1,5 +1,13 @@
 FROM python:3.9.2
 
-COPY hello_world.py .
+COPY requirements.txt /app/requirements.txt
 
-CMD [ "python3", "hello_world.py"]
+WORKDIR /app
+
+RUN pip install -r requirements.txt
+
+COPY . /app
+
+ENTRYPOINT [ "python" ]
+
+CMD ["src/app.py" ]
