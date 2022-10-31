@@ -1,0 +1,4 @@
+image: centos:7
+test:
+ script:
+ - echo “Hello!” && exit 1
